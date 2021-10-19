@@ -1,0 +1,6 @@
+<h3>タイトル投稿ページ</h3>
+<%= form_with model: @list, local:true do |f| %>
+<h5>タイトル</h5>
+ <%= f.text_field :title %>
+ <%= f.text_field :body %>
+ <%= f.submit '投稿' %>
